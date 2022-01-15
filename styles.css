@@ -1,0 +1,510 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700&display=swap");
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+main,
+header {
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+* {
+  font-family: "Raleway", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: grey;
+}
+
+li {
+  list-style: none;
+}
+
+nav {
+  width: 100%;
+  padding-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav img {
+  width: 100px;
+}
+
+nav div a {
+  margin: 30px;
+  padding: 25px;
+}
+
+nav div a:hover {
+  color: blue;
+  border-top: 2px solid blue;
+  transition: 0.2s;
+}
+
+.text-recherche span {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.recherche {
+  margin-top: 50px;
+}
+
+.formulaire form {
+  justify-content: center;
+}
+
+.formulaire span {
+  background: #f2f2f2;
+  padding: 7px 9px 8px 9px;
+  border-radius: 10px 0 0 10px;
+}
+
+.formulaire span i {
+  font-size: 13px;
+}
+
+.formulaire input {
+  line-height: 30px;
+  margin-left: -3px;
+  border: 1px solid #f2f2f2;
+}
+
+.formulaire button {
+  background: #0065fc;
+  color: white;
+  padding: 10px 8px 10px 8px;
+  margin-left: -4px;
+  border-radius: 0 10px 10px 0;
+  border: none;
+}
+
+/*Filtre*/
+
+.filtre {
+  margin-top: 30px;
+}
+.text-filtre {
+  width: 50%;
+}
+
+.text-filtre ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0;
+}
+
+.text-filtre ul a {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 10px 10px 50px;
+  border: 2px solid #afafaf;
+  border-radius: 30px;
+  position: relative;
+  color: black;
+}
+
+.text-filtre ul a:hover {
+  transform: scale(1.1);
+  border: 2px solid #deebff;
+}
+
+.text-filtre ul li {
+  color: black;
+  font-weight: bold;
+}
+
+.text-filtre ul a i {
+  color: #0065fc;
+  padding: 14px;
+  background: #deebff;
+  border-radius: 20px;
+  position: absolute;
+  left: -2px;
+}
+
+.info {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.info i {
+  color: #0065fc;
+  font-size: 10px;
+  font-weight: bold;
+  padding: 5px 8px;
+  border: 2px solid #f2f2f2;
+  border-radius: 30px;
+}
+
+/*Hébergement*/
+
+#hebergement {
+  width: 100%;
+  display: flex;
+  gap: 5%;
+}
+
+.left {
+  width: 55%;
+  height: 570px;
+  background: #f2f2f2;
+  padding: 27px 0px 27px 0px;
+  margin-top: 50px;
+  border-radius: 3%;
+}
+
+.produits {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+  gap: 4%;
+  justify-content: center;
+  align-items: center;
+}
+
+.titre-texte {
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.prix-texte {
+  font-size: 13px;
+}
+/*LEFT*/
+
+#hebergement a {
+  color: black;
+}
+
+.left h2 {
+  margin-left: 9%;
+}
+
+.left .card-produit {
+  width: 24%;
+}
+
+.left .card-produit a {
+  width: 100%;
+  height: 190px;
+  padding: 5px;
+  margin-bottom: 5%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10%;
+  overflow: hidden;
+  background: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.left .card-produit a img {
+  width: 100%;
+  height: 60%;
+  object-fit: cover;
+  border-radius: 10% 10% 0 0;
+  margin-bottom: 9px;
+}
+
+.left a .card-texte {
+  width: 100%;
+  height: 50%;
+  margin-top: -10px;
+  padding: 0px 10px 0px 10px;
+}
+
+.left a .card-texte p {
+  line-height: 5px;
+}
+
+.left a .card-texte i {
+  font-size: 14px;
+  margin-left: -4px;
+}
+
+.left a .card-texte .blue {
+  color: #0065fc;
+}
+.left a .card-texte .grey {
+  color: #f2f2f2;
+}
+
+.left .afficher-btn {
+  margin-left: 70px;
+  font-weight: 900;
+}
+
+/*RIGHT*/
+.right {
+  width: 30%;
+  height: 570px;
+  background: #f2f2f2;
+  padding: 27px 0px 27px 0px;
+  margin-top: 50px;
+  border-radius: 3%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.right h2 {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.right .card-produit {
+  width: 79%;
+}
+
+.right .card-produit a {
+  width: 100%;
+  height: 150px;
+  padding: 10px 5px 0px 5px;
+  margin-bottom: 5%;
+  display: flex;
+  align-items: center;
+  border-radius: 22px;
+  overflow: hidden;
+  background: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.right .card-produit a img {
+  width: 40%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10% 0 0 10%;
+  margin-bottom: 9px;
+}
+
+.right a .card-texte {
+  width: 60%;
+  height: 100%;
+  margin-top: -10px;
+  padding: 10px;
+}
+
+.right a .card-texte i {
+  margin-top: 18%;
+  font-size: 14px;
+  margin-left: -4px;
+}
+
+.right a .card-texte .blue {
+  color: #0065fc;
+}
+.right a .card-texte .grey {
+  color: #f2f2f2;
+}
+
+/*Activité*/
+
+#activité-marseille {
+  margin-top: 10%;
+}
+#activité {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  gap: 3%;
+}
+
+.texte-activité {
+  font-size: 14px;
+  font-weight: 700;
+  margin-left: 5%;
+  color: black;
+}
+
+#activité .solo {
+  width: 20%;
+  height: 80%;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+#activité .solo img {
+  width: 100%;
+  height: 90%;
+  object-fit: cover;
+}
+
+#activité .double {
+  width: 20%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8%;
+}
+
+#activité .double div {
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+#activité .double div img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.un div:nth-child(1) {
+  height: 60%;
+}
+
+.un div:nth-child(1) img {
+  height: 80%;
+}
+
+.un div:nth-child(2) {
+  height: 40%;
+}
+.un div:nth-child(2) img {
+  height: 73%;
+}
+
+.deux div:nth-child(1) {
+  height: 45%;
+}
+
+.deux div:nth-child(1) img {
+  height: 77%;
+}
+
+.deux div:nth-child(2) {
+  height: 55%;
+}
+.deux div:nth-child(2) img {
+  height: 80%;
+}
+
+/*Footer*/
+
+footer {
+  width: 100%;
+  padding: 15px 0 15px 100px;
+  display: flex;
+
+  gap: 20%;
+  background: #f2f2f2;
+  align-items: center;
+}
+
+footer div ul {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+footer div ul li a {
+  font-size: 15px;
+}
+
+.titre-footer {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 992px) {
+  main,
+  header {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .text-filtre {
+    width: 100%;
+  }
+
+  .text-filtre ul a {
+    font-size: 14px;
+  }
+
+  .left {
+    width: 80%;
+    overflow: auto;
+  }
+
+  .produits {
+    padding: 0;
+    height: 100%;
+  }
+  .titre-texte {
+    font-size: 10px;
+  }
+
+  .right h2 {
+    font-size: 14px;
+  }
+
+  .right .card-produit {
+    width: 90%;
+  }
+
+  .right .card-produit a img {
+    width: 50%;
+  }
+
+  #activité .solo img {
+    height: 87%;
+  }
+
+  footer {
+    width: 90%;
+    gap: 10%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .text-filtre ul a {
+    font-size: 12px;
+  }
+
+  .left a .card-texte p {
+    font-size: 10px;
+  }
+
+  #hebergement .produits .card-texte .titre-texte:nth-child(1) {
+    line-height: 10px;
+  }
+
+  .right .card-produit a {
+    width: 100%;
+    height: 150px;
+  }
+
+  .right a .card-texte .prix-texte {
+    font-size: 10px;
+  }
+
+  .right a .card-texte i {
+    font-size: 10px;
+  }
+
+  footer {
+    width: 90%;
+    gap: 5%;
+  }
+
+  footer div ul li a {
+    font-size: 12px;
+  }
+
+  .titre-footer {
+    font-size: 13px;
+    font-weight: bold;
+  }
+}

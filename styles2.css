@@ -1,0 +1,127 @@
+@media screen and (max-width: 667px) {
+  body {
+    padding: 15px;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav div {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  nav div a:hover {
+    color: blue;
+    border-top: none;
+
+    border-bottom: 2px solid blue;
+    transition: 0.2s;
+  }
+
+  .text-filtre ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 25px;
+    padding: 0;
+  }
+
+  .text-filtre ul li:nth-child(1) {
+    width: 100%;
+  }
+
+  #hebergement {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .right {
+    width: 85%;
+    height: auto;
+    margin: 5% auto;
+  }
+
+  .right .card-produit {
+    width: 70%;
+  }
+
+  .right .card-produit a {
+    height: 100px;
+  }
+
+  .left {
+    width: 100%;
+    height: auto;
+    background: white;
+  }
+
+  .produits {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .left .card-produit {
+    width: 85%;
+  }
+
+  .left .card-produit a {
+    border-radius: 7%;
+    height: 200px;
+  }
+
+  .left .card-produit a img {
+    border-radius: 7% 7% 0 0;
+  }
+
+  #activité-marseille {
+    width: 100%;
+    padding: 10px;
+  }
+
+  #activité {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  #activité .solo {
+    width: 90%;
+    height: 150px;
+    object-fit: contain;
+  }
+
+  #activité .solo img {
+    height: 100px;
+  }
+
+  #activité .double {
+    width: 90%;
+    height: auto;
+  }
+
+  #activité .un img {
+    height: 100px;
+  }
+
+  #activité .deux img {
+    height: 100px;
+  }
+
+  footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0;
+  }
+
+  footer div {
+    width: 100%;
+  }
+}
