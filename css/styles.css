@@ -113,7 +113,6 @@ nav div a:hover {
 }
 
 .text-filtre ul a:hover {
-  transform: scale(1.1);
   border: 2px solid #deebff;
 }
 
@@ -256,10 +255,15 @@ nav div a:hover {
   align-items: center;
 }
 
-.right h2 {
-  width: 100%;
+.right .populaires {
+  width: 70%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.right .populaires img {
+  width: 8%;
 }
 
 .right .card-produit {
@@ -289,7 +293,7 @@ nav div a:hover {
 
 .right a .card-texte {
   width: 60%;
-  height: 100%;
+  height: auto;
   margin-top: -10px;
   padding: 10px;
 }
@@ -395,7 +399,7 @@ nav div a:hover {
 
 footer {
   width: 100%;
-  padding: 15px 0 15px 100px;
+  padding: 15px 0 15px 60px;
   display: flex;
 
   gap: 20%;
@@ -418,6 +422,52 @@ footer div ul li a {
   font-weight: bold;
 }
 
+@media screen and (max-width: 1657px) {
+  #hebergement {
+    gap: 1%;
+  }
+
+  .left {
+    width: 90%;
+    overflow: auto;
+  }
+
+  .titre-texte {
+    font-size: 10px;
+  }
+
+  .right h2 {
+    font-size: 14px;
+  }
+
+  .right .card-produit {
+    width: 90%;
+  }
+
+  .right .card-produit a img {
+    width: 50%;
+  }
+
+  .texte-activité {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .text-filtre {
+    width: 70%;
+    justify-content: space-evenly;
+  }
+
+  .text-filtre ul {
+    font-size: 14px;
+  }
+
+  footer {
+    gap: 10%;
+  }
+}
+
 @media screen and (max-width: 992px) {
   main,
   header {
@@ -434,7 +484,7 @@ footer div ul li a {
   }
 
   .left {
-    width: 80%;
+    width: 75%;
     overflow: auto;
   }
 
@@ -463,8 +513,8 @@ footer div ul li a {
   }
 
   footer {
-    width: 90%;
-    gap: 10%;
+    width: 93%;
+    gap: 0;
   }
 }
 
@@ -495,7 +545,7 @@ footer div ul li a {
   }
 
   footer {
-    width: 90%;
+    width: 92%;
     gap: 5%;
   }
 
@@ -524,6 +574,10 @@ footer div ul li a {
     justify-content: space-around;
   }
 
+  nav div a {
+    padding: 0;
+  }
+
   nav div a:hover {
     color: blue;
     border-top: none;
@@ -533,11 +587,12 @@ footer div ul li a {
   }
 
   .text-filtre ul {
+    width: 85%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
-    gap: 25px;
+    gap: 10px;
     padding: 0;
   }
 
