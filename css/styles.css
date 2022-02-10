@@ -643,19 +643,6 @@ footer div ul li a {
     border-radius: 7% 7% 0 0;
   }
 
-  #activité-marseille {
-    width: 100%;
-    padding: 10px;
-  }
-
-  #activité {
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-
   #activité .solo {
     width: 90%;
     height: 150px;
