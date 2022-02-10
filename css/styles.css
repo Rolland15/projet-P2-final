@@ -575,7 +575,7 @@ footer div ul li a {
   }
 
   nav div a {
-    padding: 0;
+    padding: 10px;
   }
 
   nav div a:hover {
